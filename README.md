@@ -17,5 +17,6 @@ This project contains two main parts:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/saucedemo-qa-automation.git
-cd saucedemo-qa-automationnpm install
+git clone https://github.com/Nagy022/saucedemo-qa-automation
+cd saucedemo-qa-automation
+npm install
