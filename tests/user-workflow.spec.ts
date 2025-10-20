@@ -6,14 +6,20 @@ import { CheckoutPage } from '../pages/CheckoutPage';
 import { CheckoutOverviewPage } from '../pages/CheckoutOverviewPage';
 
 test.describe('سيناريو شراء المنتج من موقع SauceDemo', () => {
+<<<<<<< HEAD
   // تعريف المتغيرات لكل الصفحات
+=======
+>>>>>>> 08b05fd82624c75887d93b180bf51dd68a3c05a0
   let loginPage: LoginPage;
   let inventoryPage: InventoryPage;
   let cartPage: CartPage;
   let checkoutPage: CheckoutPage;
   let checkoutOverviewPage: CheckoutOverviewPage;
 
+<<<<<<< HEAD
   // هذا بيتنفذ قبل كل اختبار
+=======
+>>>>>>> 08b05fd82624c75887d93b180bf51dd68a3c05a0
   test.beforeEach(async ({ page }) => {
     loginPage = new LoginPage(page);
     inventoryPage = new InventoryPage(page);
@@ -23,7 +29,10 @@ test.describe('سيناريو شراء المنتج من موقع SauceDemo', ()
   });
 
   test('تسجيل دخول وإضافة منتج وإتمام عملية الشراء', async ({ page }) => {
+<<<<<<< HEAD
     // بيانات الاختبار
+=======
+>>>>>>> 08b05fd82624c75887d93b180bf51dd68a3c05a0
     const testData = {
       username: 'standard_user',
       password: 'secret_sauce',
@@ -51,6 +60,7 @@ test.describe('سيناريو شراء المنتج من موقع SauceDemo', ()
       await inventoryPage.assertSuccessfulLogin();
     });
 
+<<<<<<< HEAD
     // الخطوة 4: إضافة منتج للسلة
     await test.step('إضافة حقيبة الظهر للسلة', async () => {
       await inventoryPage.addProductToCart(testData.itemName);
@@ -82,5 +92,8 @@ test.describe('سيناريو شراء المنتج من موقع SauceDemo', ()
       await checkoutOverviewPage.assertItemInOverview(testData.itemName);
       await checkoutOverviewPage.assertTotalPriceDisplayed();
     });
+=======
+    // باقي الخطوات...
+>>>>>>> 08b05fd82624c75887d93b180bf51dd68a3c05a0
   });
 });
